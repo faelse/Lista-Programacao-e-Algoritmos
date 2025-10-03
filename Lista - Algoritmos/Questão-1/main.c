@@ -19,48 +19,48 @@ int main() {
 
     // ITEM A: Calcular idade em anos
 
-    int birth_year, birth_month, birth_day, age;
+    int ano_nascimento, mes_nascimento, dia_nascimento, idade;
     
-    time_t now = time(NULL);
-    struct tm *current_date = localtime(&now);
+    time_t agora = time(NULL);
+    struct tm *data_atual = localtime(&agora);
     
-    int current_year = current_date->tm_year + 1900;
-    int current_month = current_date->tm_mon + 1;
-    int current_day = current_date->tm_mday;
+    int ano_atual = data_atual->tm_year + 1900;
+    int mes_atual = data_atual->tm_mon + 1;
+    int dia_atual = data_atual->tm_mday;
 
     do {
-    printf("Digite ano (1899 - %d): ", current_year);
-    scanf("%d", &birth_year);
-    } while (birth_year < 1899 || birth_year > current_year);
+    printf("Digite ano (1899 - %d): ", ano_atual);
+    scanf("%d", &ano_nascimento);
+    } while (ano_nascimento < 1899 || ano_nascimento > ano_atual);
 
     do {
     printf("Digite mês (1-12): ");
-    scanf("%d", &birth_month);
-    } while (birth_month < 1 || birth_month > 12);
+    scanf("%d", &mes_nascimento);
+    } while (mes_nascimento < 1 || mes_nascimento > 12);
 
     do {
         printf("Digite dia (1-30): ");
-        scanf("%d", &birth_day);
-    } while (birth_day < 1 || birth_day > 30);
+        scanf("%d", &dia_nascimento);
+    } while (dia_nascimento < 1 || dia_nascimento > 30);
 
-    age = current_year - birth_year;
+    idade = ano_atual - ano_nascimento;
 
-    if (birth_month > current_month || 
-        (birth_month == current_month && birth_day > current_day)) {
-        age -= 1;
+    if (mes_nascimento > mes_atual || 
+        (mes_nascimento == mes_atual && dia_nascimento > dia_atual)) {
+        idade -= 1;
     }
 
-    printf("Idade: %d anos\n", age);
+    printf("Idade: %d anos\n", idade);
 
     /*ITEM B: Converter para dias -> 
     Como cada mês tem 30 dias, o ano tem 360 dias*/
     
-    int birth_total_days = (birth_year * 360) + (birth_month * 30) + birth_day;
-    int current_total_days = (current_year * 360) + (current_month * 30) + current_day;
+    int total_dias_nascimento = (ano_nascimento * 360) + (mes_nascimento * 30) + dia_nascimento;
+    int total_dias_atual = (ano_atual * 360) + (mes_atual * 30) + dia_atual;
 
-    int age_days = current_total_days - birth_total_days;
+    int idade_em_dias = total_dias_atual - total_dias_nascimento;
 
-    printf("Idade em dias: %d dias\n", age_days);
+    printf("Idade em dias: %d dias\n", idade_em_dias);
 
     return 0;
 }
