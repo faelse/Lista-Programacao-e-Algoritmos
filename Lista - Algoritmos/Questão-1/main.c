@@ -52,7 +52,7 @@ int main() {
 
     printf("Idade: %d anos\n", age);
 
-    /*ITEM B: Converter para dias -> c
+    /*ITEM B: Converter para dias -> 
     Como cada mês tem 30 dias, o ano tem 360 dias*/
     
     int birth_total_days = (birth_year * 360) + (birth_month * 30) + birth_day;
