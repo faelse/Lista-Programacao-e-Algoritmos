@@ -23,7 +23,7 @@ prejuízo.
 
 
 int main() {
-    int linhas = 5;
+    int linhas = 10;
     int colunas = 2;
     float lucro = 0;
     int c = 0;
