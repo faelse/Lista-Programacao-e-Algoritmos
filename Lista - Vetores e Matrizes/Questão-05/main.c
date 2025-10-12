@@ -41,19 +41,16 @@ int main() {
     int flag;
     flag = 1;
     
-    for(j = 0; j < 6; j++){
-        while(flag){
-            flag = 0;
-            for(i = 0 ; i < 6-1 ; i++) {
-                if(alturas[i] < alturas[i+1]){
-                    aux = alturas[i];
-                    alturas[i] = alturas[i+1];
-                    alturas[i+1] = aux;
-                    flag = 1;
-                }
+    for(i = 0; i < 6 - 1; i++){
+        for(j = 0; j < 6 - 1 - i; j++){
+            if(alturas[j] < alturas[j+1]){
+                aux = alturas[j];
+                alturas[j] = alturas[j+1];
+                alturas[j+1] = aux;
             }
         }
     }
+
 
     for(i=0 ; i<6 ; i++){
     printf("\n Item : %d: %.2f", i+1,alturas[i]);
