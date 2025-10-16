@@ -1,39 +1,45 @@
-/*Augusto é estagiário em uma empresa de telecomunicações. 
-Cada dia, ele recebe um vetor com n medidas inteiras que representam a força de um sinal em diferentes horários. 
-Ele precisa transformar esse vetor original em um segundo vetor, que evidencie a tendência de variação do sinal,
-e pediu que você fizesse um programa que imprimia os dois vetores.
+/* Jorge é dono de uma lanchoneta e está montando seu cardápio. 
+Ele possui uma lista com os preços dos lanches que irá vender, e quer ter seu cardápio organizado. 
 
-A regra de transformação é a seguinte : 
+Para isso, precisa que você faça um programa que, ao receber uma lista de preços, a ordene de forma decrescente 
+e mostre quais são os lanches de menor e de maior valores. 
 
-- O primeiro valor do novo vetor é igual ao do vetor original;
+Exemplo de lista de preços :
 
-- A partir do segundo valor, o novo vetor deve conter a soma entre o valor atual e o valor anterior,
-ambos do vetor original.
+{ 54.50 , 12.00 , 5.50 , 33.75 , 8.00 , 16.20 , 2.23 , 48/.70 , 31.20 , 22.990 }
 */
 
-#include <stdio.h>
+
+#include <stdio.h> 
 
 int main() {
     int n;
-    printf("Digite a medida n : ");
+    printf("Digite a quantidade de preços que sua lista terá : ");
     scanf("%d", &n);
-    int vetor_original[n];
-    int novo_vetor[n];
+    float lista[n];
 
     for(int i = 0; i<n; i++){
-        printf("Digite o valor da posição %d : ", i);
-        scanf("%d", &vetor_original[i]);
+        printf("Digite o preço de índice : %d \n", i);
+        scanf("%f", &lista[i]);
     }
 
-    novo_vetor[0] = vetor_original[0];
-
-    for(int i = 1; i<n; i++){
-        novo_vetor[i] = vetor_original[i] + vetor_original[i-1];
+    for(int i = 0; i<n; i++){
+        for(int j = i; j<n; j++){
+            if(lista[i] < lista[j]){
+            float aux = lista[i];
+            lista[i] = lista[j];
+            lista[j] = aux;
+            }
+        }
     }
-        
+
+        printf("Lista ordenada de forma decrescente : ");
         for(int i = 0; i<n; i++){
-        printf("%d \n", novo_vetor[i]);
+        printf(" %.2f \n", lista[i]);
     }
+    printf("Maior preço : %.2f \n", lista[0]);
+    printf("Maior preço : %.2f", lista[n-1]);
+
 
     return 0;
 }
