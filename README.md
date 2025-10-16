@@ -12,7 +12,7 @@ O objetivo deste projeto é facilitar o estudo, a prática e o acompanhamento da
 
 ## Sobre a Disciplina
 
-A disciplina de **Programação e Algoritmos** busca desenvolver o raciocínio lógico, a capacidade de resolução de problemas e o domínio dos principais conceitos da programação estruturada. Os exercícios presentes neste repositório abrangem até o momento temas como:
+A disciplina de **Programação e Algoritmos** busca desenvolver o raciocínio lógico, a capacidade de resolução de problemas e o domínio dos principais conceitos da programação estruturada. Até o momento os exercícios presentes neste repositório abrangem temas como:
 
 - Estruturas condicionais e de repetição
 - Vetores e matrizes
