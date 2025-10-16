@@ -11,6 +11,7 @@ A regra de transformação é a seguinte :
 ambos do vetor original.
 */
 
+
 #include <stdio.h>
 
 int main() {
