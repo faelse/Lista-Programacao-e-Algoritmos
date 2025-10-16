@@ -6,8 +6,8 @@ O objetivo deste projeto é facilitar o estudo, a prática e o acompanhamento da
 
 ## Estrutura do Repositório
 
-- `lista1/` — Exercícios e soluções da Lista 1
-- `lista2/` — Exercícios e soluções da Lista 2
+- `Lista - Algoritmos/` — Exercícios e soluções da Lista 1
+- `Lista - Vetores e Matrizes/` — Exercícios e soluções da Lista 2
 - Outras listas e materiais serão adicionados conforme o andamento da disciplina
 
 ## Sobre a Disciplina
