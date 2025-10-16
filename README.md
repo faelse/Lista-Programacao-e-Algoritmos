@@ -1,31 +1,37 @@
-# Lista - Programação e Algoritmos / Vetores e Matrizes
+# Lista de Programação e Algoritmos
 
-Breve resumo dos exercícios em C organizados por pastas. Cada exercício é um programa independente com um arquivo principal chamado `main.c` (ou um binário `main`).
+Este repositório foi criado para armazenar e organizar as listas de exercícios da disciplina de **Programação e Algoritmos**. Ao longo do semestre, serão adicionadas diferentes listas de problemas e suas respectivas soluções em linguagem **C**.
 
-Estrutura principal:
+O objetivo deste projeto é facilitar o estudo, a prática e o acompanhamento da evolução nas atividades propostas pela disciplina. Além das listas de exercícios, o repositório pode conter exemplos adicionais, códigos de apoio e anotações sobre conceitos importantes de programação e algoritmos.
 
-- [Lista - Algoritmos](Lista - Algoritmos/)
-  - [`main`](Lista - Algoritmos/Questão-01/main.c) — [`main`](Lista - Algoritmos/Questão-02/main.c) — [`main`](Lista - Algoritmos/Questão-03/main.c) — [`main`](Lista - Algoritmos/Questão-04/main) — [`main`](Lista - Algoritmos/Questão-05/main) — [`main`](Lista - Algoritmos/Questão-06/main.c) — [`main`](Lista - Algoritmos/Questão-07/main.c) — [`main`](Lista - Algoritmos/Questão-08/main.c) — [`main`](Lista - Algoritmos/Questão-09/main) — [`main`](Lista - Algoritmos/Questão-10/main)
-- [Lista - Vetores e Matrizes](Lista - Vetores e Matrizes/)
-  - [Questão-01](Lista - Vetores e Matrizes/Questão-01/main.c) — [Questão-02](Lista - Vetores e Matrizes/Questão-02/main.c) — [Questão-03](Lista - Vetores e Matrizes/Questão-03/main.c) — [Questão-04](Lista - Vetores e Matrizes/Questão-04/main.c) — [Questão-05](Lista - Vetores e Matrizes/Questão-05/main.c) — [Questão-06](Lista - Vetores e Matrizes/Questão-06/main) — [Questão-07](Lista - Vetores e Matrizes/Questão-07/main) — [Questão-08](Lista - Vetores e Matrizes/Questão-08/main.c) — [Questão-09](Lista - Vetores e Matrizes/Questão-09/main.c) — [Questão-10](Lista - Vetores e Matrizes/Questão-10/main.c)
+## Estrutura do Repositório
 
-Como compilar (exemplo):
+- `lista1/` — Exercícios e soluções da Lista 1
+- `lista2/` — Exercícios e soluções da Lista 2
+- Outras listas e materiais serão adicionados conforme o andamento da disciplina
 
-- Compilar um arquivo C:
-  - gcc -o bin/questao01 "Lista - Algoritmos/Questão-01/main.c"
-- Rodar:
-  - ./bin/questao01
+## Sobre a Disciplina
 
-Dicas rápidas após análise do código:
+A disciplina de **Programação e Algoritmos** busca desenvolver o raciocínio lógico, a capacidade de resolução de problemas e o domínio dos principais conceitos da programação estruturada. Os exercícios presentes neste repositório abrangem até o momento temas como:
 
-- Padrão: cada exercício usa input via scanf e imprime via printf — ótimo para testes manuais.
-- Validações: muitos arquivos já fazem validação de entrada (ex.: notas entre 0 e 10, ano/mês/dia). Mantê-las evita entradas inválidas.
-- Matrizes/vetores: os exercícios em `Lista - Vetores e Matrizes` têm alocações estáticas; para tamanhos maiores, considere alocação dinâmica.
-- Compilação por lote: criar um script simples (Makefile ou shell) facilita compilar todos os mains existentes.
+- Estruturas condicionais e de repetição
+- Vetores e matrizes
 
-Exemplos de arquivos principais (para abrir/edit):
+## Como Utilizar
 
-- [Lista - Algoritmos/Questão-01/main.c](Lista - Algoritmos/Questão-01/main.c) — função [`main`](Lista - Algoritmos/Questão-01/main.c)
-- [Lista - Algoritmos/Questão-06/main.c](Lista - Algoritmos/Questão-06/main.c) — trata delta e raízes reais
-- [Lista - Vetores e Matrizes/Questão-10/main.c](Lista - Vetores e Matrizes/Questão-10/main.c) — soma de matrizes A e B em C
-- [Lista - Vetores e Matrizes/Questão-09/main.c](Lista - Vetores e Matrizes/Questão-09/main.c) — soma por linha e diagonal principal
+1. Clone este repositório em seu computador:
+   ```bash
+   git clone https://github.com/faelse/Lista-Programacao-e-Algoritmos.git
+   ```
+2. Navegue até a lista desejada e abra os arquivos `.c` em seu editor de preferência.
+3. Compile e execute os programas utilizando um compilador C, como o GCC:
+   ```bash
+   gcc nome_do_arquivo.c -o nome_do_programa
+   ./nome_do_programa
+   ```
+
+## Contribuições
+
+Sinta-se livre para sugerir melhorias, apontar correções ou enviar novas soluções através de pull requests ou issues.
+
+---
