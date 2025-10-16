@@ -1,4 +1,4 @@
-# Lista de Programação e Algoritmos
+# Listas de Programação e Algoritmos
 
 Este repositório foi criado para armazenar e organizar as listas de exercícios da disciplina de **Programação e Algoritmos**. Ao longo do semestre, serão adicionadas diferentes listas de problemas e suas respectivas soluções em linguagem **C**.
 
@@ -8,6 +8,7 @@ O objetivo deste projeto é facilitar o estudo, a prática e o acompanhamento da
 
 - `Lista - Algoritmos/` — Exercícios e soluções da Lista 1
 - `Lista - Vetores e Matrizes/` — Exercícios e soluções da Lista 2
+- `Provas Antigas/` — Contém provas antigas e suas respectivas respostas
 - Outras listas e materiais serão adicionados conforme o andamento da disciplina
 
 ## Sobre a Disciplina
