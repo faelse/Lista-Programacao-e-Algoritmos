@@ -8,7 +8,6 @@ O objetivo deste projeto é facilitar o estudo, a prática e o acompanhamento da
 
 - `Lista - Algoritmos/` — Exercícios e soluções da Lista 1
 - `Lista - Vetores e Matrizes/` — Exercícios e soluções da Lista 2
-- `Provas Antigas/` — Contém provas antigas e suas respectivas respostas
 - Outras listas e materiais serão adicionados conforme o andamento da disciplina
 
 ## Sobre a Disciplina
