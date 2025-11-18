@@ -1,37 +1,48 @@
 # Listas de Programação e Algoritmos
 
-Este repositório foi criado para armazenar e organizar as listas de exercícios da disciplina de **Programação e Algoritmos**. Ao longo do semestre, serão adicionadas diferentes listas de problemas e suas respectivas soluções em linguagem **C**.
+Este repositório organiza as listas de exercícios da disciplina **Programação e Algoritmos**. As soluções e os códigos de apoio estão implementados em linguagem C. O objetivo é facilitar o estudo, a prática e o acompanhamento das atividades da disciplina.
 
-O objetivo deste projeto é facilitar o estudo, a prática e o acompanhamento da evolução nas atividades propostas pela disciplina. Além das listas de exercícios, o repositório pode conter exemplos adicionais, códigos de apoio e anotações sobre conceitos importantes de programação e algoritmos.
+## Possíveis erros
 
-## Estrutura do Repositório
+Podem haver erros, pois respondi à lista enquanto estava cursando o primeiro semestre de Ciência da Computação na UECE.
 
-- `Lista - Algoritmos/` — Exercícios e soluções da Lista 1
-- `Lista - Vetores e Matrizes/` — Exercícios e soluções da Lista 2
-- Outras listas e materiais serão adicionados conforme o andamento da disciplina
+## Estrutura do repositório
 
-## Sobre a Disciplina
+Cada lista está em uma pasta numerada. Dentro de cada lista existem subpastas `Questão-XX` contendo o código-fonte (`main.c`) e, em alguns casos, um executável chamado `main`.
 
-A disciplina de **Programação e Algoritmos** busca desenvolver o raciocínio lógico, a capacidade de resolução de problemas e o domínio dos principais conceitos da programação estruturada. Até o momento os exercícios presentes neste repositório abrangem temas como:
+- `01. Lista - Algoritmos/` — Lista 1: conceitos básicos e algoritmos
+- `02. Lista - Vetores e Matrizes/` — Lista 2: vetores e matrizes
+- `03. Lista - Funções/` — Lista 3: funções e modularização
+- `04. Lista - Ponteiros/` — Lista 4: ponteiros e manipulação de memória
+- `05. Lista - Arquivos/` — Lista 5: operações com arquivos
+
+> Observação: Alguns diretórios podem conter um arquivo executável precompilado chamado `main`. Esses binários foram incluídos para facilitar testes rápidos; se preferir, remova-os e compile os fontes localmente.
+
+## Como compilar e executar
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/faelse/Lista-Programacao-e-Algoritmos.git
+cd Lista-Programacao-e-Algoritmos
+```
+
+2. Entre na pasta da questão desejada, compile e execute (exemplo):
+
+```bash
+cd "01. Lista - Algoritmos"/Questão-01
+gcc main.c -o main       # compilar
+./main                  # executar
+```
+
+Se o arquivo já contiver um executável `main`, você pode executá-lo com `./main`.
+
+## Sobre a disciplina
+
+A disciplina trabalha raciocínio lógico e técnicas básicas de programação estruturada. As listas presentes cobrem temas como:
 
 - Estruturas condicionais e de repetição
 - Vetores e matrizes
-
-## Como Utilizar
-
-1. Clone este repositório em seu computador:
-   ```bash
-   git clone https://github.com/faelse/Lista-Programacao-e-Algoritmos.git
-   ```
-2. Navegue até a lista desejada e abra os arquivos `.c` em seu editor de preferência.
-3. Compile e execute os programas utilizando um compilador C, como o GCC:
-   ```bash
-   gcc nome_do_arquivo.c -o nome_do_programa
-   ./nome_do_programa
-   ```
-
-## Contribuições
-
-Sinta-se livre para sugerir melhorias, apontar correções ou enviar novas soluções através de pull requests ou issues.
-
----
+- Funções e modularização
+- Ponteiros e manipulação de memória
+- Leitura/escrita de arquivos
